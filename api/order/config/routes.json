@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "method": "POST",
+      "path": "/orders/confirm",
+      "handler": "order.confirm",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "GET",
       "path": "/orders",
       "handler": "order.find",
