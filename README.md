@@ -1,5 +1,8 @@
 # Strapi Magic Stripe Next Ecommerce Backend
 
+### Companion Video
+https://www.youtube.com/watch?v=385cpCpGRC0
+
 A Ecommerce Backend made with Strapi
 
 Requires users to be logged in to make a purchase
