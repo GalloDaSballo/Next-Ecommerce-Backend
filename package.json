@@ -15,17 +15,17 @@
     "pg": "^8.5.1",
     "pg-connection-string": "^2.4.0",
     "sqlite3": "^5.0.0",
-    "strapi": "3.2.5",
-    "strapi-admin": "3.2.5",
-    "strapi-connector-bookshelf": "3.2.5",
-    "strapi-plugin-content-manager": "3.2.5",
-    "strapi-plugin-content-type-builder": "3.2.5",
-    "strapi-plugin-email": "3.2.5",
+    "strapi": "3.4.4",
+    "strapi-admin": "3.4.4",
+    "strapi-connector-bookshelf": "3.4.4",
+    "strapi-plugin-content-manager": "3.4.4",
+    "strapi-plugin-content-type-builder": "3.4.4",
+    "strapi-plugin-email": "3.4.4",
     "strapi-plugin-magic": "^0.3.2",
-    "strapi-plugin-upload": "3.2.5",
-    "strapi-plugin-users-permissions": "3.2.5",
+    "strapi-plugin-upload": "3.4.4",
+    "strapi-plugin-users-permissions": "3.4.4",
     "strapi-provider-upload-aws-s3": "^3.3.3",
-    "strapi-utils": "3.2.5",
+    "strapi-utils": "3.4.4",
     "stripe": "^8.121.0"
   },
   "author": {
@@ -35,7 +35,7 @@
     "uuid": "8a042ae3-6282-4672-969c-64100545b0ed"
   },
   "engines": {
-    "node": ">= 12.x < 13.x",
+    "node": ">= 12.x <= 14.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
