@@ -3,10 +3,6 @@ const _ = require('lodash');
 module.exports = async (ctx, next) => {
   let role;
 
-  /** With Magic Changes */
-  await strapi.plugins['magic'].services['magic'].loginWithMagic(ctx)
-  /** END With Magic Changes */
-
   if (ctx.state.user) {
     // request is already authenticated in a different way
     return next();
@@ -24,8 +20,15 @@ module.exports = async (ctx, next) => {
       ctx.state.user = await strapi.plugins[
         'users-permissions'
       ].services.user.fetchAuthenticatedUser(id);
+      
     } catch (err) {
-      return handleErrors(ctx, err, 'unauthorized');
+      /** With Magic Changes */
+        try{
+          await strapi.plugins['magic'].services['magic'].loginWithMagic(ctx)
+      } catch (err) {
+          return handleErrors(ctx, err, 'unauthorized');
+      }
+      /** END With Magic Changes */
     }
 
     if (!ctx.state.user) {
